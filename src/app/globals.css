@@ -17,6 +17,7 @@
 }
 
 body {
+  background-color: black; /* Set the background color to black */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +25,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.name-title {
+  font-family: 'Arial Black', Arial, sans-serif;
+}
+
+/* Additional CSS for h1 */
+h1 {
+  font-size: 36px; /* Adjust the value as needed */
+  text-align: left;
+}
+
+h2{
+  font-size: 20px;
 }
