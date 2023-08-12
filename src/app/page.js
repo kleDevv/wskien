@@ -5,16 +5,10 @@ import Head from 'next/head';
 export default function Home() {
 
   return (
-    <main style={{ backgroundColor: '#4682a9', fontFamily: 'var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' }} className="flex flex-col items-center justify-center">
+    <main style={{ backgroundColor: '#4682a9' }} className="flex flex-col items-center justify-center">
 
       {/* Flexbox container for two columns */}
       <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
-
-      <Head>
-        {/* Link to the "Inter" font CSS */}
-        <link rel="stylesheet" href="/fonts/Inter-3.19/inter.css" />
-      </Head>
-
        {/* Left Column */}
        <div className="left-column flex-shrink-0 flex flex-col items-start space-y-4 p-20 md:overflow-y-auto md:max-h-screen md:fixed left-0 top-0">
           {/* Personal Information */}
@@ -78,14 +72,14 @@ export default function Home() {
         <div className="right-column flex flex-col items-start space-y-4 flex-grow max-w-screen-md overflow-y-auto">
           {/*About me */}
           <section id="about-me">
-            <h5 style={{ paddingBottom: '10px' }}>
-            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I created my first game. Although it wasn't super complex, I enjoyed spending way too much time adding different features. It allowed me to gain a passion for something new that I never stopped pursuing.
-            </h5>
-            <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and am working currently at my second MECOP internship at Flex Force Enterprises. Here, I am working with AI image detection and tracking software and integrating them into embedded systems.
-            </h5>
-            <h5 style={{ paddingBottom: '10px' }}>
+          <h5 style={{ paddingBottom: '10px' }}>
+            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I created my first game. Although it wasn&apos;t super complex, I enjoyed spending way too much time adding different features. It allowed me to gain a passion for something new that I never stopped pursuing.
+          </h5>
+          <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and am working currently at my second MECOP internship at Flex Force Enterprises. Here, I am working with AI image detection and tracking software and integrating them into embedded systems.
+          </h5>
+          <h5 style={{ paddingBottom: '10px' }}>
             On my down time, I like competitive shooters like Valorant and Apex. But away from the screens, another big part of my life is church and worship. I play guitar, volleyball, and hike the Oregon trails.
-            </h5>
+          </h5>
             
           </section>
 
