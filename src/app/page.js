@@ -97,6 +97,7 @@ export default function Home() {
                   alt="OSU Logo"
                   width={50}
                   height={50}
+                  style={{ maxWidth: '100%', borderRadius: '10px' }}
                 />
               </div>
               <div>
@@ -124,7 +125,7 @@ export default function Home() {
                   </div>
                   <div className="project-image" style={{ paddingTop: '2px' }}>
                     <Image
-                      src='/Project2-image2.png'
+                      src={project.imageSrc}
                       alt="Project Image"
                       layout="responsive"
                       width={800}
