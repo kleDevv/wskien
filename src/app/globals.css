@@ -130,6 +130,10 @@ p{
 
 }
 
+.text-custom-color {
+  color: #e5e7eb ;
+}
+
 .resume-link {
   text-decoration: underline;
   cursor: pointer;

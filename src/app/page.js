@@ -78,7 +78,21 @@ export default function Home() {
           <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and am working currently at my second MECOP internship at Flex Force Enterprises. Here, I am working with AI image detection and tracking software and integrating them into embedded systems.
           </h5>
           <h5 style={{ paddingBottom: '10px' }}>
-            On my down time, I like competitive shooters like Valorant and Apex. But away from the screens, another big part of my life is church and worship. I play guitar, volleyball, and hike the Oregon trails.
+            On my down time, I like competitive shooters like Valorant and Apex. But away from the screens, another big part of my life is  
+            {' '}
+            <a
+              style={{
+                color: '#91c8e4',
+                transition: 'color 0.3s, font-size 0.3s',
+              }}
+              href="https://vgbcportland.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold hover:text-custom-color hover:text-xl"
+            >
+              church and worship
+            </a>
+            . I play guitar, volleyball, and hike the Oregon trails.
           </h5>
             
           </section>
@@ -206,9 +220,10 @@ export default function Home() {
         {/* Your footer */}
         <footer className="py-6 px-4 w-full text-center">
           <p className="text-sm text-gray-600">
-            Loosely designed in Figma and coded in Visual Studio Code by Kien Le (Me). Built with Next.js and Tailwind CSS. Deployed with &copy; {new Date().getFullYear()}
+            Loosely designed in Figma and coded in Visual Studio Code by Kien Le (Me). Built with <a href="nextjs.org" target="_blank" rel="noopener noreferrer">Next.js</a> and Tailwind CSS. Deployed with <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a> &copy; {new Date().getFullYear()}
           </p>
         </footer>
+
       </main>
       
   );
