@@ -97,7 +97,6 @@ export default function Home() {
                   alt="OSU Logo"
                   width={50}
                   height={50}
-                  style={{ maxWidth: '100%', borderRadius: '10px' }}
                 />
               </div>
               <div>
@@ -226,7 +225,7 @@ const projects = [
       // Add more descriptions here
     ],
     link: 'https://github.com/DataDevv/CarGoesVroom',
-    imageSrc: '/Project-image.png' // Path to the image for this project
+    imageSrc: '/Project-image.PNG' // Path to the image for this project
     // Rest of the project data
   },
   {
@@ -238,7 +237,7 @@ const projects = [
       // Add more descriptions here
     ],
     link: 'https://github.com/kleDevv/wskien/tree/master',
-    imageSrc: '/Project2-image2.png' // Path to the image for this project
+    imageSrc: '/Project2-image2.PNG' // Path to the image for this project
     // Rest of the project data
   },
   // Add more projects here
