@@ -225,8 +225,7 @@ const projects = [
       // Add more descriptions here
     ],
     link: 'https://github.com/DataDevv/CarGoesVroom',
-    imageSrc: '/Project-image.png' // Path to the image for this project
-    // Rest of the project data
+    imageSrc: '/public/Project-image.png' 
   },
   {
     id: 'P2',
@@ -237,8 +236,7 @@ const projects = [
       // Add more descriptions here
     ],
     link: 'https://github.com/kleDevv/wskien/tree/master',
-    imageSrc: '/Project2-image2.png' // Path to the image for this project
-    // Rest of the project data
+    imageSrc: '/public/Project2-image2.png' 
   },
   // Add more projects here
 ];
