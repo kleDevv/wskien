@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                   <div className="project-image" style={{ paddingTop: '2px' }}>
                     <Image
-                      src={project.imageSrc}
+                      src='/Project2-image2.png'
                       alt="Project Image"
                       layout="responsive"
                       width={800}
