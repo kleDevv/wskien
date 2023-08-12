@@ -24,11 +24,11 @@ export default function Home() {
         <div className="flex items-center space-x-4" style={{ paddingTop: '30px', marginBottom: '20px' }} >
           {/*<a target="_blank" href="https://icons8.com/icon/32292/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
           <a href="https://www.instagram.com/key_en_le/" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
-            <Image src="/instagram-icon.png" alt="Instagram Icon" width={24} height={24} className="hover:text-gray-700" />
+            <Image src="/instagram-icon2.png" alt="Instagram Icon" width={24} height={24} className="hover:text-gray-700" />
           </a>
           {/*<a target="_blank" href="https://icons8.com/icon/118467/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
           <a href="https://www.facebook.com/profile.php?id=100005960447507" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
-            <Image src="/facebook-icon.png" alt="Facebook Icon" width={24} height={24} className="hover:text-gray-700" />
+            <Image src="/facebook-icon2.png" alt="Facebook Icon" width={24} height={24} className="hover:text-gray-700" />
           </a>
           {/*<a target="_blank" href="https://icons8.com/icon/ZmG5l3ueI6FO/linkedin">linkedin</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
           <a href="https://www.linkedin.com/in/kien-le-066173259/" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
