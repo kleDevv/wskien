@@ -123,14 +123,14 @@ export default function Home() {
                     <p style={{ color: '#749bc2' }}>{project.year}</p>
                   </div>
                   <div className="project-image" style={{ paddingTop: '2px' }}>
-                    <Image
-                      src={project.imageSrc}
-                      alt="Project Image"
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      style={{ maxWidth: '100%', borderRadius: '10px' }}
-                    />
+                  <Image
+                    src={`${process.env.PUBLIC_URL}/Project-image.png`}
+                    alt="Project Image"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    style={{ maxWidth: '100%', borderRadius: '10px' }}
+                  />
                   </div>
                   <div className="project-details">
                     {project.descriptions.map((description, index) => (
