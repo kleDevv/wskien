@@ -123,14 +123,14 @@ export default function Home() {
                     <p style={{ color: '#749bc2' }}>{project.year}</p>
                   </div>
                   <div className="project-image" style={{ paddingTop: '2px' }}>
-                  <Image
-                    src={`${process.env.PUBLIC_URL}/Project-image.png`}
-                    alt="Project Image"
-                    layout="responsive"
-                    width={800}
-                    height={600}
-                    style={{ maxWidth: '100%', borderRadius: '10px' }}
-                  />
+                    <Image
+                      src={project.imageSrc}
+                      alt="Project Image"
+                      layout="responsive"
+                      width={800}
+                      height={600}
+                      style={{ maxWidth: '100%', borderRadius: '10px' }}
+                    />
                   </div>
                   <div className="project-details">
                     {project.descriptions.map((description, index) => (
@@ -225,7 +225,8 @@ const projects = [
       // Add more descriptions here
     ],
     link: 'https://github.com/DataDevv/CarGoesVroom',
-    imageSrc: '/public/Project-image.png' 
+    imageSrc: '/Project-image.png' // Path to the image for this project
+    // Rest of the project data
   },
   {
     id: 'P2',
@@ -236,7 +237,8 @@ const projects = [
       // Add more descriptions here
     ],
     link: 'https://github.com/kleDevv/wskien/tree/master',
-    imageSrc: '/public/Project2-image2.png' 
+    imageSrc: '/Project2-image2.png' // Path to the image for this project
+    // Rest of the project data
   },
   // Add more projects here
 ];
