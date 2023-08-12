@@ -1,11 +1,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Head from 'next/head';
+import Head from 'next/head'
+
+export const metadata = {
+  title: "Kien Le",
+  description: "Kien Le's Website",
+}
 
 export default function Home() {
 
   return (
     <main style={{ backgroundColor: '#4682a9' }} className="flex flex-col items-center justify-center">
+
+      <Head>
+        <link rel="shortcut icon" href="public/favicon.ico" />
+      </Head>
 
       {/* Flexbox container for two columns */}
       <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
