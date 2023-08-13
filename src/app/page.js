@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 
+
 export const metadata = {
   title: "Kien Le",
   description: "Kien Le's Website",
@@ -30,7 +31,7 @@ export default function Home() {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex items-center space-x-4" style={{ paddingTop: '30px', marginBottom: '20px' }} >
+        <div className="flex items-left space-x-4" style={{ paddingTop: '30px', marginBottom: '20px' }} >
           {/*<a target="_blank" href="https://icons8.com/icon/32292/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
           <a href="https://www.instagram.com/key_en_le/" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
             <Image src="/instagram-icon2.png" alt="Instagram Icon" width={24} height={24} className="hover:text-gray-700" />
@@ -54,7 +55,7 @@ export default function Home() {
         </div>
 
           {/* Vertical List */}
-          <nav className="text-white p-4" >
+          <nav className="text-white p-4 items-left " >
             <div className="max-w-5xl mx-auto flex flex-col space-y-2" >
                 <a style={{ color: '#91c8e4' }} href="#about-me" className="text-xl font-bold hover:text-gray-500 hover:text-lg">
                   &mdash; About Me
@@ -82,7 +83,7 @@ export default function Home() {
           {/*About me */}
           <section id="about-me">
           <h5 style={{ paddingBottom: '10px' }}>
-            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I created my first game. Although it wasn&apos;t super complex, I enjoyed spending way too much time adding different features. It allowed me to gain a passion for something new that I never stopped pursuing.
+            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I developed my first game. Although it wasn&apos;t super complex, I enjoyed spending way too much time adding different features and limit testing with my creativity. It allowed me to gain a passion for something new that I never stopped pursuing.
           </h5>
           <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and am working currently at my second MECOP internship at Flex Force Enterprises. Here, I am working with AI image detection and tracking software and integrating them into embedded systems.
           </h5>
