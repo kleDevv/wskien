@@ -98,6 +98,16 @@ body {
   font-family: 'Arial Black', Arial, sans-serif;
 }
 
+.skill-bubble {
+  margin-right: 10px;
+  padding: 2px 4px; /* Adjust padding to scale the bubble down */
+  border: 1px solid #91c8e4;
+  border-radius: 18px; /* Adjust border-radius to scale the bubble down */
+  font-size: 12px; /* Adjust font-size to scale the text down */
+  background-color: #91c8e4;
+  color: #fff;
+}
+
 /* Additional CSS for h1 */
 h1 {
   
