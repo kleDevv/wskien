@@ -216,7 +216,7 @@ export default function Home() {
               Resume
             </h1>
             {/* Add your resume content here */}
-            <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" className="">
+            <a href="/RESUME1.pdf" target="_blank" rel="noopener noreferrer" className="">
               <div id="resume" className="project-container">
                 <p style={{ color: '#f6f4eb' }}>
                   You can download my resume{" "}
