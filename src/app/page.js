@@ -135,6 +135,36 @@ export default function Home() {
             {/* Add your education content here */}
           </section>
 
+          {/* Relevant Work History */}
+          <section id="Work" className="text-left max-w-screen-md">
+            <h1>Work History</h1>
+            {workHistory.map((entry) => (
+              <Link
+                key={entry.id}
+                href={entry.link} // Use the link property from each workHistory entry
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <div className="project-container">
+                  <h2>{entry.company}</h2>
+                  <h3>{entry.jobTitle}</h3>
+                  <h4 style={{ color: '#749bc2' }}>{entry.date}</h4>
+                  <div className="skills flex" style={{ padding: '5px 0' }}>
+                    {entry.skills.map((skill, index) => (
+                      <div className="skill-bubble" key={index}>
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ color: '#f6f4eb' }}>
+                    <p style={{ marginBottom: '20px' }}>{entry.description}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </section>
+
           {/* Projects */}
           <section id="Projects" className="text-left max-w-screen-md">
             <h1 style={{ color: '#88d1f1' }}>Projects</h1>
@@ -179,37 +209,6 @@ export default function Home() {
             ))}
           </section>
 
-
-          {/* Relevant Work History */}
-          <section id="Work" className="text-left max-w-screen-md">
-            <h1>Work History</h1>
-            {workHistory.map((entry) => (
-              <Link
-                key={entry.id}
-                href={entry.link} // Use the link property from each workHistory entry
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                <div className="project-container">
-                  <h2>{entry.company}</h2>
-                  <h3>{entry.jobTitle}</h3>
-                  <h4 style={{ color: '#749bc2' }}>{entry.date}</h4>
-                  <div className="skills flex" style={{ padding: '5px 0' }}>
-                    {entry.skills.map((skill, index) => (
-                      <div className="skill-bubble" key={index}>
-                        {skill}
-                      </div>
-                    ))}
-                  </div>
-                  <div style={{ color: '#f6f4eb' }}>
-                    <p style={{ marginBottom: '20px' }}>{entry.description}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </section>
-
           {/* Resume */}
           <section id="Resume" className="text-left padding max-w-screen-md ">
             <h1>
@@ -245,7 +244,7 @@ const projects = [
     id: 'P1',
     year: 'Fall 2022 - Spring 2023',
     title: 'DASHER BLITZ',
-    skills: ['C++', 'Blueprint', 'Unreal Engine 5', 'Blender'],
+    skills: ['C++', 'Blueprint', 'Unreal Engine 5', 'Blender', 'Git/Github', 'Visual Studio'],
     descriptions: [
       '1st place winner of the 2023 Oregon State University Game Competition.',
       'Developed by my team and I (Dataflow Games), Dasher Blitz is a delivery style vehicle driving game that has different maps, in-game objects, multiple vehicles, and a continually improving experience for users. Dasher Blits was developed with Unreal Engine 5 and utilized the C++ and Blueprint capabilities. We also used Blender as a model and animation tool.',
@@ -259,7 +258,7 @@ const projects = [
     id: 'P2',
     year: 'Summer 2023',
     title: 'PERSONAL WEBSITE',
-    skills: ['Next.js', 'React.js', 'JavaScript', 'CSS'],
+    skills: ['Next.js', 'React.js', 'JavaScript', 'CSS', 'Visual Studio'],
     descriptions: [
       'You are looking at it! Developed by yours truly, I created this project in order to showcase myself and my experience. This site was made with Next.js and its libraries. Styled with React components, .js and .css.',
       // Add more descriptions here
@@ -278,7 +277,7 @@ const workHistory = [
     company: 'Flex Force Enterprises',
     jobTitle: 'MECOP Computer Science Intern',
     date: '2023 June - Current',
-    skills: ['Linux', 'C++', 'Embedded Systems', 'GStreamer', 'NVIDIA DeepStream'],
+    skills: ['Visual Studio','Linux', 'C++/C', 'Embedded Systems', 'Git/Github', 'GStreamer', 'NVIDIA DeepStream'],
     description:
       'Worked on the ASP device, specifically on the On-Screen-Display functionality. Utilized the Nvidia Jetpack toolset on a device called the Jetson. The focus was on the tracking software tools provided by Nvidia Jetpack, and I am in charge of developing methods of detection and tracking for target objects.',
     link: 'https://flexforce.us/', // Different link for this work history entry
@@ -288,7 +287,7 @@ const workHistory = [
     company: 'Tektronix',
     jobTitle: 'MECOP Computer Science Intern',
     date: '2022 April - September',
-    skills: ['C#', 'C++','.Net','Cognex Image Dectection AI'],
+    skills: ['C#', 'C++/C','.Net','Cognex Image Dectection AI', 'Visual Studio'],
     description:
       'Worked on Innovations and Development Team for the Ops department. Worked on multiple projects that included the training of AI image-detection software as well as an application to utilize it with the on-prem system. Development in C# code.',
     link: 'https://www.tek.com/en', // Different link for this work history entry
