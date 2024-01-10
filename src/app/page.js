@@ -19,8 +19,9 @@ export default function Home() {
 
       {/* Flexbox container for two columns */}
       <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
+
        {/* Left Column */}
-       <div className="left-column flex-shrink-0 flex flex-col items-start space-y-4 p-20 md:overflow-y-auto md:max-h-screen md:fixed left-0 top-0">
+       <div className="left-column flex-shrink-0 flex flex-col items-start space-y- p-20 md:overflow-y-auto md:max-h-screen md:fixed left-0 top-0 bottom-0">
           {/* Personal Information */}
           <div className="name-title">
           <div className="text-4xl" style={{color: '#f6f4eb'}}>Kien Le</div>
@@ -79,7 +80,7 @@ export default function Home() {
         
 
         {/* Right Column */}
-        <div className="right-column flex flex-col items-start space-y-4 flex-grow max-w-screen-md overflow-y-auto">
+        <div className="right-column flex flex-col items-start space-y-4 flex-grow max-w-screen-md overflow-y-auto ">
           {/*About me */}
           <section id="about-me">
           <h5 style={{ paddingBottom: '10px' }}>
@@ -135,8 +136,39 @@ export default function Home() {
             {/* Add your education content here */}
           </section>
 
+          {/* Relevant Work History */}
+          <section id="Work" className="text-left padding max-w-screen-md">
+                      <h1>Work History</h1>
+                      {workHistory.map((entry) => (
+                        <Link
+                          key={entry.id}
+                          href={entry.link} // Use the link property from each workHistory entry
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                        >
+                          <div className="project-container">
+                            <h2>{entry.company}</h2>
+                            <h3>{entry.jobTitle}</h3>
+                            <h4 style={{ color: '#749bc2' }}>{entry.date}</h4>
+                            <div className="skills flex" style={{ padding: '5px 0' }}>
+                              {entry.skills.map((skill, index) => (
+                                <div className="skill-bubble" key={index}>
+                                  {skill}
+                                </div>
+                              ))}
+                            </div>
+                            <div style={{ color: '#f6f4eb' }}>
+                              <p style={{ marginBottom: '20px' }}>{entry.description}</p>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </section>
+
+
           {/* Projects */}
-          <section id="Projects" className="text-left max-w-screen-md">
+          <section id="Projects" className="text-left padding max-w-screen-md">
             <h1 style={{ color: '#88d1f1' }}>Projects</h1>
             {/* Loop through your projects */}
             {projects.map((project) => (
@@ -173,37 +205,6 @@ export default function Home() {
                       </p>
                     ))}
                     {/* Rest of your project content */}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </section>
-
-
-          {/* Relevant Work History */}
-          <section id="Work" className="text-left max-w-screen-md">
-            <h1>Work History</h1>
-            {workHistory.map((entry) => (
-              <Link
-                key={entry.id}
-                href={entry.link} // Use the link property from each workHistory entry
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                <div className="project-container">
-                  <h2>{entry.company}</h2>
-                  <h3>{entry.jobTitle}</h3>
-                  <h4 style={{ color: '#749bc2' }}>{entry.date}</h4>
-                  <div className="skills flex" style={{ padding: '5px 0' }}>
-                    {entry.skills.map((skill, index) => (
-                      <div className="skill-bubble" key={index}>
-                        {skill}
-                      </div>
-                    ))}
-                  </div>
-                  <div style={{ color: '#f6f4eb' }}>
-                    <p style={{ marginBottom: '20px' }}>{entry.description}</p>
                   </div>
                 </div>
               </Link>

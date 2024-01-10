@@ -216,10 +216,12 @@ footer p {
     max-height: unset;
     overflow-y: visible;
     padding-left: 0; /* Remove the left padding on small screens */
+    margin-bottom: 0px;
   }
 
   /* Add spacing between sections when stacked */
   .right-column section {
+    margin-top: 0px;
     margin-bottom: 0px;
   }
 }
