@@ -84,9 +84,9 @@ export default function Home() {
           {/*About me */}
           <section id="about-me">
           <h5 style={{ paddingBottom: '10px' }}>
-            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I developed my first game. Although it wasn&apos;t super complex, I enjoyed spending way too much time adding different features and limit testing with my creativity. It allowed me to gain a passion for something new that I never stopped pursuing.
+            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I developed my first game. I enjoyed spending way too much time adding different features and limit testing with my creativity. From this I was instantly curious and sought to pursue all that I can in Computer Science.
           </h5>
-          <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and am working currently at my second MECOP internship at Flex Force Enterprises. Here, I am working with AI image detection and tracking software and integrating them into embedded systems.
+          <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and just finished up my second MECOP internship at Flex Force Enterprises. There, I was working with image detection and tracking software for ASP Products.
           </h5>
           <h5 style={{ paddingBottom: '10px' }}>
             On my down time, I like competitive shooters like Valorant and Apex. But away from the screens, another big part of my life is  
