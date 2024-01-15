@@ -89,7 +89,7 @@ export default function Home() {
           <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and just finished up my second MECOP internship at Flex Force Enterprises. There, I was working with image detection and tracking software for ASP Products.
           </h5>
           <h5 style={{ paddingBottom: '10px' }}>
-            On my down time, I like competitive shooters like Valorant and Apex. But away from the screens, another big part of my life is  
+            Other than coding, I serve in  
             {' '}
             <a
               style={{
@@ -103,7 +103,7 @@ export default function Home() {
             >
               church and worship
             </a>
-            . I play guitar, volleyball, and hike the Oregon trails.
+            , I also love to play competitive games, guitar, volleyball, and hike the Oregon trails.
           </h5>
             
           </section>
