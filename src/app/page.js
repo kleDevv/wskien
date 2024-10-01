@@ -50,7 +50,7 @@ export default function Home() {
             <Image src="/gh-icon.png" alt="GitHub Icon" width={24} height={24} className="hover:text-gray-700" />
           </a>
           {/*<a target="_blank" href="https://icons8.com/icon/3tC9EQumUAuq/enail">email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
-          <a href="/RESUME2.pdf" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
+          <a href="/RESUMEupdated.pdf" target="_blank" rel="noopener noreferrer" className="hover:scale-110">
             <Image src="/email-icon.png" alt="Email Icon" width={24} height={24} className="hover:text-gray-700" />
           </a>
         </div>
