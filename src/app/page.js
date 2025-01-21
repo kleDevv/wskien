@@ -82,7 +82,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
 
        {/* Left Column */}
-        <div className="left-column flex flex-col items-center md:items-start space-y-4 p-20 md:overflow-y-auto md:max-h-screen md:fixed left-0 top-0 bottom-0 pl-4 md:pl-10">
+        <div className="left-column flex-shrink-0 flex flex-col items-start space-y- p-20 md:overflow-y-auto md:max-h-screen md:fixed left-0 top-0 bottom-0">
           {/* Personal Information */}
           <div className="name-title">
           <div className="text-4xl" style={{color: '#f6f4eb'}}>Kien Le</div>
