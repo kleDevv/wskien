@@ -269,6 +269,19 @@ const projects = [
     imageSrc: '/Project2-image2.PNG' // Path to the image for this project
     // Rest of the project data
   },
+  {
+    id: 'P3',
+    year: 'Spring 2023',
+    title: 'Song Guesser',
+      skills: ['Android Studio', 'Musixmatch API', 'Kotlin'],
+    descriptions: [
+        'Song Guesser is a fun and interactive game app built with Android Studio, Kotlin, and the Musixmatch API. The game challenges users to identify the correct song from a set of four options based on a displayed snippet of lyrics. Players can track their performance through features like streaks and accuracy scores, making it both engaging and competitive. \n This project highlights my skills in mobile app development, API integration, and Kotlin programming, showcasing my ability to create dynamic and user - friendly applications.',
+        // Add more descriptions here
+    ],
+      link: 'https://github.com/osu-cs492-w23/final-project-team-31.git',
+    imageSrc: '/Project3-image.PNG' // Path to the image for this project
+    // Rest of the project data
+  },
   // Add more projects here
   
 ];
