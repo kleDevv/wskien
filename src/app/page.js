@@ -232,7 +232,7 @@ export default function Home() {
                     <section id="Projects" className="text-left padding max-w-screen-md">
                         <h1 style={{ color: '#88d1f1' }}>Projects</h1>
                         {/* Loop through your projects */}
-                        {projects.map((project) => (
+                        {projectsToShow.map((project) => (
                             <Link key={project.id} href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
                                 <div className="project-container" style={{ marginBottom: '20px' }}>
                                     <div className="project-details">
@@ -265,23 +265,18 @@ export default function Home() {
                                                 {description}
                                             </p>
                                         ))}
-                                        {/* Rest of your project content */}
                                     </div>
                                 </div>
                             </Link>
                         ))}
-                        {/* Show More button */}
                         {projects.length > 2 && (
                             <button
                                 style={{
-                                    color: '#91c8e4',  // Text color
-                                    transition: 'color 0.3s, font-size 0.2s'  // Custom transition for color and font size
+                                    color: '#91c8e4',
+                                    transition: 'color 0.3s, font-size 0.2s'
                                 }}
-                                onClick={() => setShowAllProjects(!showAllProjects)}  // Toggle the state
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                onClick={() => setShowAllProjects((prev) => !prev)}  // Toggle state using previous value
                                 className="text-[#9CA3AF] font-bold hover:underline hover:text-lg"
-
                             >
                                 {showAllProjects ? '← Show Less' : 'View Additional Project Archive →'}
                             </button>
