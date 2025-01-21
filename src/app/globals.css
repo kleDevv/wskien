@@ -196,13 +196,6 @@ footer p {
 
 /* Media query for screen widths below 768px (adjust the value as needed) */
 @media (max-width: 767px) {
-  .flex-col { /* Add this class to the flex container */
-    flex-direction: column; /* Change the flex direction to column */
-    align-items: center; /* Center the items horizontally */
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-
-  }
 
   /* Add padding to the flex container to create some spacing between the left and right columns when stacked */
   .flex-col {
@@ -211,13 +204,16 @@ footer p {
   }
 
   /* Remove the fixed positioning for the left column when stacked */
-  .left-column {
-    position: relative;
-    max-height: unset;
-    overflow-y: visible;
-    padding-left: 0; /* Remove the left padding on small screens */
-    margin-bottom: 0px;
-  }
+    .left-column {
+        position: static; /* Reset position */
+        max-height: unset; /* Remove max-height */
+        overflow-y: visible; /* Reset overflow */
+        padding-left: 10px; /* Remove any left padding on small screens */
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the items */
+    }
 
   /* Add spacing between sections when stacked */
   .right-column section {
