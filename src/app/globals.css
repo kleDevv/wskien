@@ -1,227 +1,179 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --font-inter: 'Inter', sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 main {
-  min-height: 100vh; /* Set the minimum height of the main container to fill the viewport */
-  display: flex;
-  flex-direction: column;
-  
-  font-weight: bold;
-
+    min-height: 100vh; /* Set the minimum height of the main container to fill the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-  background-color: #88d1f1; /* Set the background color to #88d1f1 */
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  
-  font-weight: bold;
+    background-color: #88d1f1; /* Set the background color to #88d1f1 */
+    color: rgb(0, 0, 0);
+    background: linear-gradient( to bottom, transparent, rgb(255, 255, 255) ) rgb(214, 219, 220);
 }
 
-
 .project-details h2 {
-  
-  font-weight: bold;
-  font-size: 24px;
-  color: white; /* Keep the title color white */
-  margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 24px;
+    color: white; /* Keep the title color white */
+    margin-bottom: 2px;
 }
 
 .project-details p {
-  
-  font-size: 15px;
-  color: #9CA3AF; /* Lighter grey color for descriptions */
-  margin: 0px 0; /* Adjust the margin to control the spacing between descriptions */
+    font-size: 15px;
+    color: #9CA3AF; /* Lighter grey color for descriptions */
+    margin: 0px 0; /* Adjust the margin to control the spacing between descriptions */
 }
 
 .project-year {
-  
-  flex: 0 0 10%;
-  padding-right: 1rem;
-  color: #9CA3AF; /* Lighter grey color for year */
+    flex: 0 0 10%;
+    padding-right: 1rem;
+    color: #9CA3AF; /* Lighter grey color for year */
 }
 
 .project-container {
-  position: relative; /* Needed for absolute positioning of the border */
-  transition: border-color 0.3s, transform 0.3s; /* Transition effect for the border and transform */
-  padding: 10px; /* Add padding to make the square bigger than the items */
-  border-radius: 10px; /* Add rounded edges */
-  
-  font-weight: bold;
+    position: relative; /* Needed for absolute positioning of the border */
+    transition: border-color 0.3s, transform 0.3s; /* Transition effect for the border and transform */
+    padding: 10px; /* Add padding to make the square bigger than the items */
+    border-radius: 10px; /* Add rounded edges */
 }
 
-.project-container:hover {
-  border: 2px solid whitesmoke; /* Border style for hover */
-  transform: translateY(-5px); /* Adding a slight lift effect on hover */
-  
-  font-weight: bold;
-}
+    .project-container:hover {
+        border: 2px solid whitesmoke; /* Border style for hover */
+        transform: translateY(-5px); /* Adding a slight lift effect on hover */
+    }
 
-/* Style for the left column */
 .left-column {
-  
-  padding-top: 50px;
-
+    padding-top: 50px;
 }
 
-/* Style for the right column */
 .right-column {
-  padding-left: 100px; /* Adjust this value to change the right column spacing on the left side */
-  padding-top: 45px;
-  padding-left: 100px;
+    padding-left: 100px; /* Adjust this value to change the right column spacing on the left side */
+    padding-top: 45px;
 }
 
 .name-title {
-  font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .skill-bubble {
-  margin-right: 10px;
-  padding: 2px 4px; /* Adjust padding to scale the bubble down */
-  border: 1px solid #91c8e4;
-  border-radius: 18px; /* Adjust border-radius to scale the bubble down */
-  font-size: 12px; /* Adjust font-size to scale the text down */
-  background-color: #91c8e4;
-  color: #fff;
+    margin-right: 10px;
+    padding: 2px 4px; /* Adjust padding to scale the bubble down */
+    border: 1px solid #91c8e4;
+    border-radius: 18px; /* Adjust border-radius to scale the bubble down */
+    font-size: 12px; /* Adjust font-size to scale the text down */
+    background-color: #91c8e4;
+    color: #fff;
 }
 
-/* Additional CSS for h1 */
 h1 {
-  
-  font-weight: bold;
-  font-size: 36px; /* Adjust the value as needed */
-  text-align: left;
-  color: #91c8e4;
+    font-weight: bold;
+    font-size: 36px; /* Adjust the value as needed */
+    text-align: left;
+    color: #91c8e4;
 }
 
-h2{
-  color: #f6f4eb;
-  font-weight: bold;
-  font-size: 30px;
+h2 {
+    color: #f6f4eb;
+    font-weight: bold;
+    font-size: 30px;
 }
 
-h3{
-  color: #e5e7eb ;
+h3 {
+    color: #e5e7eb;
 }
 
-h4{
-  color: #f6f4eb;
+h4 {
+    color: #f6f4eb;
 }
 
-h5{
-  color: #e5e7eb ;
-
+h5 {
+    color: #e5e7eb;
 }
 
-p{
-  color: #e5e7eb ;
-
+p {
+    color: #e5e7eb;
 }
 
 .text-custom-color {
-  color: #e5e7eb ;
+    color: #e5e7eb;
 }
 
 .resume-link {
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /* CSS for each section */
-#Projects{
-  padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
+#Projects {
+    padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
 }
-#Work{
-  padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
+
+#Work {
+    padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
 }
-#Education{
-  padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
+
+#Education {
+    padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
 }
+
 #Resume {
-  padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
+    padding-bottom: 20px; /* Add this line to add spacing at the bottom of each section */
 }
 
 /* Add this CSS to change the color and size when hovering over the links */
 nav a {
-  font-size: 20px;
-  transition: color 0.2s, font-size 0.2s; /* Add transition for smooth animation */
+    font-size: 20px;
+    transition: color 0.2s, font-size 0.2s; /* Add transition for smooth animation */
 }
 
-nav a:hover {
-  color: #d1d5db; /* Change the color to grey when hovering */
-  font-size: 22px; /* Change the font size when hovering */
-}
+    nav a:hover {
+        color: #d1d5db; /* Change the color to grey when hovering */
+        font-size: 22px; /* Change the font size when hovering */
+    }
 
 /* Your footer */
 footer {
-  padding: 10px;
-  border-radius: 10px; /* Add rounded corners to the footer */
-  width: calc(100% - 40px); /* Set the width of the footer to 100% of the container's width minus the padding (left and right) */
-  max-width: 1200px; /* Set a maximum width for the footer to control its size */
-  margin: 20px auto 0; /* Center the footer horizontally and add some spacing at the top */
-  box-sizing: border-box; /* Ensure the padding and border are included in the width calculation */
+    padding: 10px;
+    border-radius: 10px; /* Add rounded corners to the footer */
+    width: calc(100% - 40px); /* Set the width of the footer to 100% of the container's width minus the padding (left and right) */
+    max-width: 1200px; /* Set a maximum width for the footer to control its size */
+    margin: 20px auto 0; /* Center the footer horizontally and add some spacing at the top */
+    box-sizing: border-box; /* Ensure the padding and border are included in the width calculation */
 }
 
-/* Additional styles for the text inside the footer (optional) */
-footer p {
-  font-size: 14px;
-  color: #888;
-}
-
-
+    footer p {
+        font-size: 14px;
+        color: #888;
+    }
 
 /* Media query for screen widths below 768px (adjust the value as needed) */
 @media (max-width: 767px) {
-  .flex-col { /* Add this class to the flex container */
-    flex-direction: column; /* Change the flex direction to column */
-    align-items: center; /* Center the items horizontally */
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
+    .flex-col {
+        flex-direction: column; /* Change the flex direction to column */
+        align-items: center; /* Center the items horizontally */
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+    }
 
-  }
+    .flex-col {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-  /* Add padding to the flex container to create some spacing between the left and right columns when stacked */
-  .flex-col {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .left-column {
+        position: relative;
+        max-height: unset;
+        overflow-y: visible;
+        padding-left: 0; /* Remove the left padding on small screens */
+        margin-bottom: 0px;
+    }
 
-  /* Remove the fixed positioning for the left column when stacked */
-  .left-column {
-    position: relative;
-    max-height: unset;
-    overflow-y: visible;
-    padding-left: 0; /* Remove the left padding on small screens */
-    margin-bottom: 0px;
-  }
-
-  /* Add spacing between sections when stacked */
-  .right-column section {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+    .right-column section {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
