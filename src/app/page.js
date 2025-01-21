@@ -1,14 +1,75 @@
-﻿import Image from 'next/image'
+﻿'use client';
+
+import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
-
-
-export const metadata = {
-    title: "Kien Le",
-    description: "Kien Le's Website",
-}
+import { useState } from 'react';
+import { metadata } from './metadata';
 
 export default function Home() {
+    // State to track whether the user clicked 'Show More'
+    const [showAllProjects, setShowAllProjects] = useState(false);
+
+    const projects = [
+        {
+            id: 'P1',
+            year: 'Fall 2022 - Spring 2023',
+            title: 'DASHER BLITZ',
+            skills: ['C++', 'Blueprint', 'Unreal Engine 5', 'Blender'],
+            descriptions: [
+                '1st place winner of the 2023 Oregon State University Game Competition.',
+                'Developed by my team and I (Dataflow Games), Dasher Blitz is a delivery style vehicle driving game that has different maps, in-game objects, multiple vehicles, and a continually improving experience for users. Dasher Blits was developed with Unreal Engine 5 and utilized the C++ and Blueprint capabilities. We also used Blender as a model and animation tool.',
+                // Add more descriptions here
+            ],
+            link: 'https://github.com/DataDevv/CarGoesVroom',
+            imageSrc: '/Project-image.PNG' // Path to the image for this project
+            // Rest of the project data
+        },
+        {
+            id: 'P2',
+            year: 'Spring 2024',
+            title: 'CVI2.ORG',
+            skills: ['Angular Framework', 'MySQL', 'PHP', 'HTML', 'CSS'],
+            descriptions: [
+                'The CVI website was developed using the Angular framework to effectively showcase the organization\'s mission, ongoing projects, and the pastors involved.The site features a clean, intuitive UI and includes an admin panel that allows user - level content updates, ensuring both easy navigation for visitors and straightforward management for administrators.This platform provides the organization with a flexible way to keep content current and engage with their community.I worked alongside another contributor to bring this project to life.',
+                // Add more descriptions here
+            ],
+            link: 'cvi2.org',
+            imageSrc: '/CVI-image.PNG' // Path to the image for this project
+            // Rest of the project data
+        },
+
+        {
+            id: 'P3',
+            year: 'Summer 2023',
+            title: 'PERSONAL WEBSITE',
+            skills: ['Next.js', 'React.js', 'JavaScript', 'CSS'],
+            descriptions: [
+                'You are looking at it! Developed by yours truly, I created this project in order to showcase myself and my experience. This site was made with Next.js and its libraries. Styled with React components, .js and .css.',
+                // Add more descriptions here
+            ],
+            link: 'https://github.com/kleDevv/wskien/tree/master',
+            imageSrc: '/Project2-image2.PNG' // Path to the image for this project
+            // Rest of the project data
+        },
+        {
+            id: 'P4',
+            year: 'Spring 2023',
+            title: 'Song Guesser',
+            skills: ['Android Studio', 'Musixmatch API', 'Kotlin'],
+            descriptions: [
+                'Song Guesser is a fun and interactive game app built with Android Studio, Kotlin, and the Musixmatch API. The game challenges users to identify the correct song from a set of four options based on a displayed snippet of lyrics. Players can track their performance through features like streaks and accuracy scores, making it both engaging and competitive. \n This project highlights my skills in mobile app development, API integration, and Kotlin programming, showcasing my ability to create dynamic and user - friendly applications.',
+                // Add more descriptions here
+            ],
+            link: 'https://github.com/osu-cs492-w23/final-project-team-31.git',
+            imageSrc: '/SG-image.PNG' // Path to the image for this project
+            // Rest of the project data
+        },
+        // Add more projects here
+    ];
+
+    // Determine which projects to display based on the state
+    const projectsToShow = showAllProjects ? projects : projects.slice(0, 2);
 
     return (
         <main style={{ backgroundColor: '#4682a9' }} className="flex flex-col items-center justify-center">
@@ -209,7 +270,24 @@ export default function Home() {
                                 </div>
                             </Link>
                         ))}
+                        {/* Show More button */}
+                        {projects.length > 2 && (
+                            <button
+                                style={{
+                                    color: '#91c8e4',  // Text color
+                                    transition: 'color 0.3s, font-size 0.2s'  // Custom transition for color and font size
+                                }}
+                                onClick={() => setShowAllProjects(!showAllProjects)}  // Toggle the state
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#9CA3AF] font-bold hover:underline hover:text-lg"
+
+                            >
+                                {showAllProjects ? '← Show Less' : 'View Additional Project Archive →'}
+                            </button>
+                        )}
                     </section>
+
 
                     {/* Resume */}
                     <section id="Resume" className="text-left padding max-w-screen-md ">
@@ -241,37 +319,6 @@ export default function Home() {
     );
 }
 
-const projects = [
-    {
-        id: 'P1',
-        year: 'Fall 2022 - Spring 2023',
-        title: 'DASHER BLITZ',
-        skills: ['C++', 'Blueprint', 'Unreal Engine 5', 'Blender'],
-        descriptions: [
-            '1st place winner of the 2023 Oregon State University Game Competition.',
-            'Developed by my team and I (Dataflow Games), Dasher Blitz is a delivery style vehicle driving game that has different maps, in-game objects, multiple vehicles, and a continually improving experience for users. Dasher Blits was developed with Unreal Engine 5 and utilized the C++ and Blueprint capabilities. We also used Blender as a model and animation tool.',
-            // Add more descriptions here
-        ],
-        link: 'https://github.com/DataDevv/CarGoesVroom',
-        imageSrc: '/Project-image.PNG' // Path to the image for this project
-        // Rest of the project data
-    },
-    {
-        id: 'P2',
-        year: 'Summer 2023',
-        title: 'PERSONAL WEBSITE',
-        skills: ['Next.js', 'React.js', 'JavaScript', 'CSS'],
-        descriptions: [
-            'You are looking at it! Developed by yours truly, I created this project in order to showcase myself and my experience. This site was made with Next.js and its libraries. Styled with React components, .js and .css.',
-            // Add more descriptions here
-        ],
-        link: 'https://github.com/kleDevv/wskien/tree/master',
-        imageSrc: '/Project2-image2.PNG' // Path to the image for this project
-        // Rest of the project data
-    },
-    // Add more projects here
-
-];
 
 const workHistory = [
     {
