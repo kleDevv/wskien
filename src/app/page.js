@@ -145,9 +145,9 @@ export default function Home() {
                     {/*About me */}
                     <section id="about-me">
                         <h5 style={{ paddingBottom: '10px' }}>
-                            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I developed my first game. I enjoyed spending way too much time adding different features and limit testing with my creativity. From this I was instantly curious and sought to pursue all that I can in Computer Science.
+                            Back in 2018, I decided to try taking on a computer science course in high school. This experience enabled me to deep dive into the capabilities of programming and I developed my first game. I quickly realized how much I enjoyed exploring the possibilities of technology and the creative process that programming allowed me to work within. Since then, I have continued to build on that initial curiosity, pursuing opportunities to grow my skills and deepen my knowledge in Computer Science.
                         </h5>
-                        <h5 style={{ paddingBottom: '10px' }}> Fast forward to today, I graduated with a BS degree in Computer Science and a minor in Business and Entrepreneurship and just finished up my second MECOP internship at Flex Force Enterprises. There, I was working with image detection and tracking software for ASP Products.
+                        <h5 style={{ paddingBottom: '10px' }}> Today, I am an OSU graduate with a Bachelor&apos;s in Computer Science and a minor in Business and Entrepreneurship. After school, I had the opportunity with the MECOP program to work at Flex Force Enterprises. There, I was working with high-level programming and design in order to implement image detection and tracking software for ASP Products.
                         </h5>
                         <h5 style={{ paddingBottom: '10px' }}>
                             Other than coding, I serve in
